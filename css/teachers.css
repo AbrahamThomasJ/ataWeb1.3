@@ -1,0 +1,124 @@
+.teachers-main-span{
+    color: var(--ata-red);
+}
+
+.teachers-body-p{
+    margin: 0 auto;
+    font-family: 'Bebas';
+    width: 90%;
+    max-width: 1200px;
+    text-align: center;
+    font-size: 25px;
+}
+
+.social-media-link{
+    position: absolute;
+    bottom: 1%;
+    right: 5%;
+    width: 19%;
+    max-width: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    background-color: #ffffff;
+    padding: 5px;
+    border-radius: 15px;
+    z-index: 20;
+}
+
+.social-media-link img{
+    width: 100%;
+}
+
+.production-description{
+    height: 250px;
+}
+ .production-description p{
+    height: 92%;
+    overflow: auto;
+}
+
+.production{
+    position: relative;
+
+}
+
+
+.social-media-link svg{
+    color: var(--ata-red);
+    width: 100%;
+}
+
+
+.productions-section-h2-container{
+    background-image: linear-gradient(0deg, rgb(0, 0, 0), rgba(255, 255, 255, 0)), url(../atassets/atapicture/teachers-mari-david-gabo-eduar.png);
+}
+
+@media(min-width: 360px){
+    .teachers-body-p{
+        font-size: 28px;
+    }
+
+    .social-media-link{
+        width: 15%;
+    }
+}
+
+@media(min-width: 390px){
+    .teachers-body-p{
+        font-size: 31px;
+    }
+
+
+}
+
+@media(min-width: 500px) and (max-width: 700px){
+    .productions-carousel-div{
+        height: 76vmin;
+    }
+
+    .social-media-link{
+        width: 10%;
+    }
+}
+
+@media(min-width: 700px){
+    .teachers-main .line{
+        background-color: var(--ata-red);
+    }
+    .teachers-main .line::before, .teachers-main .line::after{
+        background-color: var(--ata-red);
+    }
+
+    .productions-section-h2-container{
+        background-image: linear-gradient(0deg, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)), url(../atassets/atapicture/teachers-mari-david-gabo-eduar-big.png);
+
+    }
+
+}
+
+
+@media(min-width: 900px){
+    .teachers-body-p{
+        font-size: 54px;
+    }
+
+    .teachers-main .productions-section-body{
+        padding: 30px 0 16px 0;
+    }
+
+    .teachers-main .production-description{
+        height: 380px;
+    }
+
+    .social-media-link{
+        bottom: -5%;
+        right: 0;
+    }
+
+    .production-description{
+        height: 380px;
+    }
+
+}

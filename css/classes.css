@@ -1,0 +1,409 @@
+.classes-main{
+    flex-direction: column;
+
+}
+
+.classes-main-h1-container{
+    background-position: center;
+    background-size: cover;
+    object-fit: cover;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 8;
+}
+.classes-main-h1-container-img{
+    width: 101%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: auto;
+    object-fit: cover;
+    filter: brightness(0.5);
+
+} 
+.classes-main-h1{
+    font-family: "Bebas", sans-serif;
+    font-size: 30px;
+    margin: 0 auto;
+    width: 90%;
+    max-width: 900px;
+    color: #ffffff;
+    text-align: center;
+    padding: 2em 0;
+    letter-spacing: .5px;
+    z-index: 2;
+}
+
+
+.classes-main-p-description-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    background-color: white;
+    z-index: 9;
+}
+           
+.section-one-wave{
+    width: 100%;
+    position: absolute;
+    left: 0;
+    display: block;
+    z-index: 5;
+} 
+
+.classes-main-p-description{
+    width: 90%;
+    max-width: 900px;
+    text-align: center;
+    padding: 1em;
+    font-size: 16px;
+    z-index: 10;
+
+}
+
+.section-one-wave-one{
+    bottom: 98%;
+
+}
+
+.classes-main-p-description a {
+    color: #ff0012;
+    font-size: 18px;
+    position: relative;
+}
+
+.classes-main-p-description a::after{
+    content: "";
+    background-color: #ff0012;
+    position: absolute;
+    left: -6px;
+    top: calc(100% + 0px);
+    width: 110%;
+    height: 2px;
+    box-shadow: 0 0 10px rgba(255,0,0);
+}
+
+
+
+.classes-main-p-description a.storytelling-span-ig{
+    font-size: 34px;
+}
+
+.section-one-wave-two{
+    top: 99%;
+    transform: rotate(180deg);
+
+}
+
+.academy{
+    position: relative;
+    background-color: #e2e2e2;
+
+}
+
+.academy-h2-container .classes-main-h1{
+    color: rgb(255, 255, 255);
+}
+
+.academy-h2-container .classes-main-h1 a{
+    color: var(--ata-red);
+    font-size: 34px;
+}
+
+
+.classes-main-p-description-courses-container{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2em;
+    position: relative;
+    margin-top: 10px;
+
+}
+
+.courses-container{
+    border: 2px solid rgb(255, 255, 255);
+    overflow: hidden;
+    width: 30%;
+    height: 70%;
+    background-color: rgb(0, 0, 0);
+    position: relative;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 10px;
+    border: 2px solid var(--ata-red);
+
+}
+
+.course-name{
+    color: rgb(255, 255, 255);
+    z-index: 1;
+
+
+}
+
+.course-background-img{
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: auto;
+    object-fit: cover;
+    filter: brightness(0.5) blur(0.5px);
+
+}
+
+
+.storytelling-section{
+    position: relative;
+    overflow: hidden;
+    padding: 3.5em 1em;
+    background-image: linear-gradient(319deg, rgba(255, 0, 0, 0.42), rgba(0, 20, 255, 0.42)),url(../atassets/atapicture/eduar-procenio.jpg);
+    background-position: center;
+    background-size: cover;
+    object-fit: cover;
+}
+
+
+.storytelling-section .classes-main-h1-container-img{
+    width: 350%;
+    z-index: 0;
+}
+
+.storytelling-section .section-one-wave-one{
+    top: -1px;
+    transform: rotate(180deg);
+}
+
+.storytelling-section .section-one-wave-two{
+    bottom: -1px;
+    top: auto;
+    transform: rotate(360deg);
+}
+
+.storytelling-section .classes-main-p-description{
+    color: rgb(255, 255, 255);
+}
+
+.storytelling-section .storytelling-span{
+    font-family: "Bebas";
+    color: rgb(219, 219, 0);
+    font-size: 32px;
+}
+
+.storytelling-section .classes-main-h1{
+    padding: 0;
+}
+
+.academy-h2-container{
+   /* background-image: linear-gradient(0deg, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)), url(../atassets/compressedImages/kid-smiling.jpg);*/
+    object-fit: cover;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    padding: 2em;
+    overflow: hidden;
+    position: relative;
+    background-position: center;
+    background-size: cover;
+    object-fit: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.academy-h2-container-two{
+    background-image: none;
+    padding: unset;
+}
+.academy-h2-container-two .classes-main-h1{
+    color: #000000;
+}
+
+
+@media(min-width: 360px){
+    .classes-main-h1{
+        font-size: 34px;
+    }
+
+    .storytelling-section .storytelling-span{
+        font-size: 38px;
+    }
+    .classes-main-p-description a.storytelling-span-ig{
+        font-size: 38px;
+    }
+
+   
+}
+
+@media(min-width: 400px){
+    .classes-main-p-description{
+        font-size: 20px;
+    }
+
+    .classes-main-h1{
+        font-size: 44px;
+    }
+
+    .classes-main-p-description a{
+        font-size: 22px;
+    }
+
+    .academy-h2-container .classes-main-h1 a{
+        font-size: 44px;
+    }
+
+    .courses-container{
+        height: 88%;
+    }
+
+    .storytelling-section .classes-main-p-description{
+        line-height: 1.4em;
+    }
+
+
+}
+
+
+@media(min-width:500px){
+    .courses-container{
+        padding: 10px;
+        width: 20%;
+    }
+
+    .storytelling-section{
+        padding: 6em 1em;
+    }
+
+}
+
+@media(min-width:680px){
+    
+}
+
+@media(min-width: 700px){
+   
+/*
+    .academy-h2-container{
+        background-image: none;
+        object-fit: none;
+        background-position: unset;
+        background-size: unset;
+        width: auto;
+        padding: unset;
+    }
+
+    .academy-h2-container .classes-main-h1{
+        color: #000000;
+    }*/
+
+}
+
+
+
+@media(min-width: 900px){
+
+
+    .classes-main-p-description{
+        font-size: 30px;
+    }
+
+    .classes-main-h1{
+        font-size: 54px;
+    }
+
+    .classes-main-p-description a{
+        font-size: 32px;
+    }
+
+    .academy-h2-container .classes-main-h1 a{
+        font-size: 60px;
+        transition: filter .2s;
+    }
+
+    .academy-h2-container .classes-main-h1 a:hover{
+        color: rgb(255, 0, 0);     
+        filter: drop-shadow(4px 20px 38px rgb(255, 0, 0));
+    }
+
+    .section-one-wave-one{
+        bottom: 96%;
+    }
+
+    .course-name{
+        font-size: 22px;
+    }
+
+    .storytelling-section .classes-main-p-description{
+        line-height: 1.1em;
+        font-size: 24px;
+    }
+
+    .storytelling-section .storytelling-span{
+        font-size: 54px;
+    }
+
+    .storytelling-section a.storytelling-span-ig{
+        font-size: 54px;
+    }
+
+
+    .academy-h2-container{
+        padding: 6em;
+    }
+    .academy-h2-container-two{
+        padding: unset;
+    }
+
+    .wave{
+        bottom: 99.9%
+    }
+
+
+
+
+
+
+   
+}
+
+@media(min-width: 1000px){
+    .section-one-wave-one{
+        bottom: 99%;
+    }
+
+    .courses-container{
+        height: 100%;
+    }
+
+    .classes-main-p-description-courses-container{
+        margin-top: 40px;
+    }
+
+    .courses-container{
+        width: 16%;
+    }
+
+}
+
+@media(min-width: 1200px){
+}
+
+@media(min-width: 1300px){
+    .section-one-wave-one{
+        bottom: 93%;
+    }
+}

@@ -1,0 +1,386 @@
+
+
+
+
+.logo img{
+    width: 86px;
+}
+/*
+a:hover{
+    color: rgb(24, 24, 24);
+}*/
+
+/*  HEADER  */
+
+header{
+    background-color: rgb(255,255,255);
+    width: 100vw;
+    height: 84px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    border-bottom: 2px solid rgb(135, 135, 135)
+}
+
+header.index-header{
+    position: relative;
+}
+
+.navbar{
+   /* background-color: var(--theme-color);*/
+    width: 100%;
+    max-width: 1200px;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+  /*  box-shadow: 0 7px 9px -3px var(--navbar-shallow-color);*/
+
+
+}
+
+.navbar .logo{
+    display: flex;
+    align-items: center;
+    width: 100px;
+}
+
+.logo p{
+    display: block;
+    color: var(--text-color);
+    font-size: 0.8rem;
+    font-weight: bold;
+}
+
+.navbar .menu, .navbar .action_btn{
+    display: none;
+}
+
+.ata-logo{
+    color: black;
+    width: 100%;
+}
+
+.navbar .toggle_btn{
+    display: flex;
+    width: 50px;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    margin-left: 22px;
+}
+
+
+header svg{
+    color: black;
+}
+/*
+header .li_dropdown_menu p{
+    color: white;
+}*/
+
+/* DROPDOWN MENU */
+
+.dropdown_menu{
+    position: absolute;
+    right: 100%;
+    width: 80%;
+    height: 80vh;
+    overflow-y: auto;
+    background-color: var(--dropdown-color);
+    backdrop-filter: blur(15px);
+    border-radius: 0 0 10px 0;
+    transition: right .2s;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    gap: 1rem;
+    border: 2px solid rgb(135,135,135);
+    padding: 10px;
+}
+
+.dropdown_menu a {
+    color: var(--secondary-text-color);
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.dropdown_menu.openMenu{
+    right: 23%;
+}
+
+.open{
+    display: block;
+}
+.close{
+    display: none;
+}
+
+.dropdown_menu li{
+    padding: 0.7rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-width: 0 0 1px 0;
+    border-color: var(--secondary-text-color);
+    border-style: solid;
+    width: 74%;
+}
+
+
+.menu-li{
+    position: relative;
+}
+
+
+.menu li a{
+    position: relative;
+}
+
+
+
+.dropdown_menu_congreso{
+    display: none;
+}
+
+
+/*
+.dropdown_menu li a:hover,
+.dropdown_menu li a.selected{
+    color: var(--secondary-color);
+}*/
+
+
+
+
+.navbar .toggle_btn .open-icon{
+    width: 100%;
+    color: #000000;
+}
+
+.navbar .toggle_btn .close-icon{
+    width: 2rem;
+}
+
+.dropdown_menu li a img{
+    width: 35px;
+}
+
+.comming-soon-notice{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: 4px;
+    background: repeating-linear-gradient(191deg, #a4a4a4, #dcdcdc 46px);
+    border-width: 0 0 4px 0;
+    border-style: solid;
+    border-color: rgb(0, 0, 0);
+    transition: box-shadow 0.3s ease;
+
+}
+
+.comming-soon-notice:hover{
+    filter: brightness(130%);
+    box-shadow: 0px 20px 43px 2px var(--ata-red);
+   
+}
+
+.comming-soon-notice p{
+    color: rgb(0, 0, 0);
+    font-weight: bolder;
+    letter-spacing: 2px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 0.9em;
+
+}
+
+
+
+
+
+
+/* RESPONSIVE DESIGN*/
+
+@media(min-width:400px){
+    .dropdown_menu{
+        height: auto;
+    }
+}
+
+@media(min-width:768px){
+  
+
+
+}
+
+@media(min-width:950px){
+
+    a {
+        font-size: 1.4rem;
+    }
+
+
+    .logo img{
+        width: 100px;
+    }
+
+
+
+
+    .navbar{
+       /* max-width: 980px;*/
+        flex-direction: row-reverse;
+        justify-content: center;
+    }
+
+
+    .navbar .menu, .navbar .action_btn{
+        display: block;
+    }
+
+    .navbar .menu{
+        display: flex;
+        height: 100%;
+        width: 100%;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    .navbar .menu li{
+        position: relative;
+        height: 100%;
+        display: flex;
+        align-items: center;
+    }
+
+   
+
+
+
+    .menu li .li_dropdown_menu a:hover,
+    .menu li .li_dropdown_menu a.selected{
+    color: var(--);
+    }
+    
+/*
+    .action_btn{
+        background-color: orange;
+        color: #fff;
+        padding: 0.5rem 1rem;
+        border: none;
+        outline: none;
+        border-radius: 20px;
+        font-size: 0.8rem;
+        font-weight: bold;
+        cursor: pointer;
+        transition: scale 0.2 ease;
+    
+    
+    }
+    
+    .action_btn:hover{
+        scale: 1.05;
+        color: #fff;
+    }
+    
+    .action_btn:active{
+        scale: 0.95;
+    }
+*/
+    .navbar .toggle_btn{
+        cursor: pointer;
+        display: none;
+    }
+
+    .dropdown_menu{
+        display: none;
+    }
+
+
+    .li_dropdown_menu{
+        position: absolute;
+        top: 10vh;
+        width: 200%;
+        height: 0;
+        background-color: #e2e2e2;
+        backdrop-filter: blur(15px);
+        border-radius: 6px;
+        overflow: hidden;
+     /*   transition: height .2s cubic-bezier(0.175, 0.885, 0.32, 1.275);*/
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        gap: 1.5rem;
+        padding: 0 1rem;
+        z-index: 200;
+        
+    
+        
+        transition: padding .2s /*cubic-bezier(0.175, 0.885, 0.32, 1.275)*/;
+    
+    }
+
+
+    .dropdown_menu a{
+        color: var(--text-color-inverse);
+    }
+    
+    
+    .menu .menu-li:hover .li_dropdown_menu{
+        height: unset;
+        padding: 1rem 1rem;
+        border: 2px solid rgb(135,135,135);
+    }
+
+
+
+
+
+
+
+
+    
+
+}
+
+
+@media (min-width:920px){
+
+    /* NAVBAR */
+
+    header{
+        box-shadow: 0px 20px 20px 7px #00000069;
+        border-bottom: 4px solid rgb(208, 208, 208);
+    }
+
+    .menu li a{
+        position: relative;
+        padding: 0.5rem 1rem;
+        border-radius: 10px;
+        display: flex;
+        align-items: center;
+        color: black;
+    }
+
+    .menu li a:hover{
+        color: rgb(255, 255, 255);
+        background: var(--ata-red);
+
+    }
+    .menu li a:hover > svg{
+        color: white;
+    }
+
+   
+
+
+}

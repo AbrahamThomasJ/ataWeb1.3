@@ -1,0 +1,32 @@
+.staff-main-span{
+    color: rgba(193,164,0);
+}
+
+
+.productions-section-h2-container{
+    background-image: linear-gradient(0deg, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)), url(../atassets/atapicture/actress-staff-two.png);
+}
+
+
+
+
+@media(min-width: 700px){
+    .productions-section-h2-container{
+        background-image: linear-gradient(0deg, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)), url(../atassets/atapicture/mafercita-spirit-threes.jpg);
+    }
+
+    .line{
+        background-color: #c1a400;
+    }
+
+    .line::before, .line::after {
+        content: "";
+        display: block;
+        width: 20px;
+        height: 20px;
+        background-color: #c1a400;
+        border-radius: 50%;
+        position: absolute;
+        left: -9px;
+    }
+}

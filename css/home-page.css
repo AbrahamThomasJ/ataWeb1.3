@@ -1,0 +1,105 @@
+body{
+    display: flex;
+    flex-direction: column;
+    height: 100dvh;
+    position: relative;
+}
+
+
+
+.index-main{
+    background-image: linear-gradient(
+        0deg,rgba(255, 255, 255, 0.888),rgba(255, 255, 255, 0.47)),url(../atassets/atapicture/_DSC6038.jpg);
+    flex: 1;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 100dvh;
+    padding-top: 84px;
+
+    
+  
+}
+
+.home-page-section{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.home-page-h2{
+    color: var(--h1-color);
+    font-weight: bold;
+    font-size: 2.1em;
+    text-align: start;
+
+}
+
+.home-page-h2 span{
+    font-weight: 100;
+    color: var(--h1-span-color);
+}
+
+
+
+
+.home-page-video-container{
+    width: 80%;
+    max-width: 428px;
+    height: 148px;
+    border-radius: 15px;
+  /*  box-shadow: -13px -18px 43px 2px rgba(216,0,0,0.81);*/
+
+}
+
+.video{
+    width: 100%;
+    height: 100%;
+    border-radius: 12px;
+}
+
+
+@media (min-width: 360px){
+    .home-page-h2{
+        font-size: 2.5em;
+    }
+
+    .home-page-section{
+        justify-content: space-around;
+        height: 58%;
+    }
+
+    .home-page-video-container{
+        height: 164px;
+    }
+
+}
+
+@media (min-width: 400px){
+    .home-page-video-container{
+        height: 178px;
+    }
+}
+
+@media (min-width: 700px){
+    .home-page-h2{
+        font-size: 3em;
+    }
+
+    .home-page-video-container{
+        height: 264px;
+        
+    }
+}
+
+@media(min-width: 900px){
+    .home-page-section{
+        height: 70%;
+    }
+
+    .home-page-video-container{
+        height: 245px;
+    }
+}

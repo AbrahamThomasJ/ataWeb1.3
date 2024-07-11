@@ -1,0 +1,143 @@
+/* FOOTER SECTION */
+
+.footer-section{
+    width: 100%;
+    max-width: 1400px;
+}
+
+footer{
+    background: linear-gradient(143deg, var(--ata-red), rgb(34,0,0));
+}
+
+
+
+footer.index-footer{
+    width: 180px;
+    padding: 15px;
+    border-radius: 10px;
+    margin-left: 8%;
+    align-self: flex-start;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.index-contact-container{
+    width: 85%;
+    display: flex;
+    flex-direction: column;
+    max-width: none;
+    margin: 0;
+}
+
+.index-social-media-container{
+    justify-content: space-around;
+    gap: 0;
+    display: flex;
+}
+
+.index-contact-container li{
+    list-style: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+
+footer .index-contact-container img{
+    width: 26px;
+}
+
+
+
+.index-contact-container .direction p{
+    color: #ffffff;
+    font-size: 10px;
+    width: 100%;
+
+}
+
+.index-contact-container li.direction{
+    align-self: flex-start;
+}
+
+.index-contact-container .index-footer-img-tiktok-logue{
+    width: 18px;
+}
+
+
+/*THE OTHERS FOOTERS*/
+.footer{
+    width: 100%;
+    padding: 1em 0 2em;
+
+}
+.footer-elements-container{
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+.footer-ul{
+    display: flex;
+    flex-direction: row;
+    gap: 6px;
+
+}
+.footer-li{
+
+}
+.footer-li-a{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.footer-li-a-img{
+    width: 30px;
+
+}
+.footer-container-direction{
+
+}
+.footer-container-direction-p{
+    color: #ffffff;
+
+}
+
+
+
+
+
+
+
+@media(min-width: 700px){
+    footer.index-footer{
+        width: 250px;
+        padding: 24px;
+        border-radius: 22px;
+    }
+
+    footer .index-contact-container img{
+        width: 40px;
+    }
+
+    .index-contact-container .tiktok-logue{
+        width: 28px;
+    }
+
+    .index-contact-container{
+        width: 100%;
+    }
+
+    .index-contact-container .direction p{
+        font-size: 14px;
+    }
+
+
+}
+
