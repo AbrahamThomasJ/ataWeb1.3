@@ -9,7 +9,7 @@ body{
 
 .index-main{
     background-image: linear-gradient(
-        0deg,rgba(255, 255, 255, 0.888),rgba(255, 255, 255, 0.47)),url(../atassets/atapicture/_DSC6038.jpg);
+        0deg,rgba(255, 255, 255, 0.888),rgba(255, 255, 255, 0.47)),url(../atassets/atapicture/public-christmas-carol.jpg);
     flex: 1;
     flex-direction: column;
     justify-content: space-evenly;
