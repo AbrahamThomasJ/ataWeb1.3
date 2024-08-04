@@ -168,6 +168,11 @@
 
 
 .storytelling-section{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
     position: relative;
     overflow: hidden;
     padding: 3.5em 1em;
@@ -176,6 +181,7 @@
     background-size: cover;
     object-fit: cover;
 }
+
 
 
 .storytelling-section .classes-main-h1-container-img{
@@ -231,6 +237,26 @@
 }
 .academy-h2-container-two .classes-main-h1{
     color: #000000;
+}
+
+.section-one-wave-two-separator{
+    top: 0%;
+}
+
+.background-classes-one{
+    
+    background-image: linear-gradient(319deg, rgba(255, 0, 0, 0.42), rgba(0, 20, 255, 0.42)),url(../atassets/atapicture/infantil-group.png);
+
+}
+
+.background-classes-two{
+
+    background-image: linear-gradient(319deg, rgba(255, 0, 0, 0.42), rgba(0, 20, 255, 0.42)),url(../atassets/atapicture/juvenil-group.png);
+}
+
+.background-classes-three{
+
+    background-image: linear-gradient(319deg, rgba(255, 0, 0, 0.42), rgba(0, 20, 255, 0.42)),url(../atassets/atapicture/adult-group.png);
 }
 
 
