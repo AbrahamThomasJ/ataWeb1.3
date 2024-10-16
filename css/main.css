@@ -1,7 +1,7 @@
 
 @font-face {
     font-family: "Roboto";
-    src: url(../atassets/fonts/Roboto/Roboto-light.ttf) format('truetype');
+    src: url(../atassets/fonts/Roboto/Roboto-Light.ttf) format('truetype');
 }
 
 @font-face {
@@ -10,7 +10,7 @@
 }
 
 @font-face {
-    font-family: "Roboto-regular";
+    font-family: "Roboto-Regular";
     src: url(../atassets/fonts/Roboto/Roboto-Regular.ttf) format('truetype');
 }
 

@@ -43,6 +43,9 @@ body{
     color: var(--h1-span-color);
 }
 
+.home-page-p{
+    font-family: "Roboto-Regular";
+}
 
 
 
