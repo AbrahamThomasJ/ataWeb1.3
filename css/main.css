@@ -1,7 +1,7 @@
 
 @font-face {
     font-family: "Roboto";
-    src: url(../atassets/fonts/Roboto/Roboto-Medium.ttf) format('truetype');
+    src: url(../atassets/fonts/Roboto/Roboto-light.ttf) format('truetype');
 }
 
 @font-face {
@@ -15,13 +15,11 @@
     box-sizing: border-box;
 }
 
+
 :root{
     --ata-red: #ad0713;
     --notredame-purple: #861d60;
     --notredame-blue: #3f256f;
-}
-
-:root{
     --theme-color: rgb(255,255,255);
     --primary-color: #124f88;
     --secondary-color: #f7c331;
@@ -118,20 +116,20 @@ ul,li{
 
     /* CUSTOM SCROLLBAR */
 
-    .body-red::-webkit-scrollbar{
+    .body-red::-webkit-scrollbar, .body-gold::-webkit-scrollbar{
         width: .6em;
         background: rgb(203, 203, 203);
         height: 0;
     }
     
 
-    .body-red::-webkit-scrollbar-track{
+    .body-red::-webkit-scrollbar-track, .body-gold::-webkit-scrollbar-track{
         border-radius: 100vw;
         border: 2px;
         margin-block: .5em;
     }
 
-    .body-red::-webkit-scrollbar-thumb{
+    .body-red::-webkit-scrollbar-thumb,  .body-gold::-webkit-scrollbar-thumb{
         background: #747474;
         border-radius: 100vw;
         
@@ -141,33 +139,9 @@ ul,li{
         background: var(--ata-red);
     }
 
-    /*SRCOLLBAR GOLD*/ 
-    .body-gold::-webkit-scrollbar{
-        width: .6em;
-        background: rgb(203, 203, 203);
-        height: 0;
-    }
-    
-
-    .body-gold::-webkit-scrollbar-track{
-        border-radius: 100vw;
-        border: 2px;
-        margin-block: .5em;
-    }
-
-    .body-gold::-webkit-scrollbar-thumb{
-        background: #747474;
-        border-radius: 100vw;
-        
-    }
-
     .body-gold::-webkit-scrollbar-thumb:hover{
         background: rgba(193,164,0);
     }
 
 }
 
-/*
-body{
-    padding: 100px 0 0 0;
-}*/

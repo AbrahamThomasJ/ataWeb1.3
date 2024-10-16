@@ -225,7 +225,8 @@ header .li_dropdown_menu p{
 @media(min-width:950px){
 
     a {
-        font-size: 1.4rem;
+        font-size: 1.1rem;
+        text-transform: uppercase;
     }
 
 
