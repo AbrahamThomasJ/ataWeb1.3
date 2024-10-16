@@ -9,6 +9,11 @@
     src: url(../atassets/fonts/bebas/BebasNeue-Regular.ttf) format('truetype');
 }
 
+@font-face {
+    font-family: "Roboto-regular";
+    src: url(../atassets/fonts/Roboto/Roboto-Regular.ttf) format('truetype');
+}
+
 * {
     margin: 0;
     padding: 0;
