@@ -7,13 +7,13 @@
     <title>A telón abierto</title>
 
     <script>
-        function handleRedirect(){
+        function handleRedirect() {
             var path = window.location.pathname;
-            if(path === '/index'){
+            if (path === '/' || path === '/index') {
                 window.location.href = '/index.html';
             }
         }
-
+    
         window.onload = handleRedirect;
     </script>
 
