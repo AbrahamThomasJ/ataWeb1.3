@@ -9,14 +9,13 @@
     <script>
         function handleRedirect(){
             var path = window.location.pathname;
-            if(path === './index'){
-                window.location.href = './index.html';
+            if(path === '/index'){
+                window.location.href = '/index.html';
             }
         }
 
         window.onload = handleRedirect;
     </script>
-
 
 
 
@@ -31,7 +30,6 @@
     <link rel="stylesheet" href="./css/next-production.css">
     <link rel="stylesheet" href="./css/footer.css">
 
-    <script src="./js/redirection.js"></script>
 </head>
 <body class="index-body body-red">
     <header>
