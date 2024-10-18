@@ -23,7 +23,7 @@ function carousel(arrowLeft,arrowRight,scroll,elements){
         evt.preventDefault();
         scroll.scrollLeft += evt.deltaY;
         updateArrowVisibility();
-    },{ passive: true });
+    },{ passive: false });
 
 
     arrowRight.addEventListener("click",(evt)=>{
