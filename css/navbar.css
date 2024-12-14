@@ -180,22 +180,24 @@ header .li_dropdown_menu p{
     justify-content: center;
     width: 100%;
     padding: 4px;
-    background: repeating-linear-gradient(191deg, #a4a4a4, #dcdcdc 46px);
-    border-width: 0 0 4px 0;
+    background: repeating-linear-gradient(191deg, var(--principito-purple), var(--principito-purple-two) 46px);
+    border-top: 2px solid gold;
+    border-left: 0px;
+    border-right: 0px;
+    border-bottom: 5px solid rgb(42, 8, 104);
     border-style: solid;
-    border-color: rgb(0, 0, 0);
     transition: box-shadow 0.3s ease;
 
 }
 
 .comming-soon-notice:hover{
     filter: brightness(130%);
-    box-shadow: 0px 20px 43px 2px var(--ata-red);
+    box-shadow: 0px 20px 43px 2px var(--principito-gold);
    
 }
 
 .comming-soon-notice p{
-    color: rgb(0, 0, 0);
+    color: var(--principito-gold);
     font-weight: bolder;
     letter-spacing: 2px;
     font-family: 'Times New Roman', Times, serif;

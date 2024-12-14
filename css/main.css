@@ -28,6 +28,7 @@
     --theme-color: rgb(255,255,255);
     --primary-color: #124f88;
     --secondary-color: #f7c331;
+
     --text-color-inverse: rgb(150, 150, 150);
     --text-color: rgb(0,0,0);
     --navbar-shallow-color: #e5e5e5;
@@ -41,6 +42,11 @@
     --video-border: 4px solid var(--ata-red);
     --dark-background-text-color: rgb(255, 255, 255);
     --dark-background-light-theme: #5a5a5a;
+
+    --principito-gold: #e3cf0a;
+    --principito-purple: #2f0f64;
+    --principito-purple-two: #5f0f8d;
+    --principito-dark-purple: rgba(16,6,40,1);
 }
 
 body{
