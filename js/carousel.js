@@ -68,9 +68,9 @@ function initCarousel(carouselDiv){
 
 
     const scrollContainer = carouselDiv.querySelector(".carousel-ul");
-    liElements = carouselDiv.querySelector(".carousel-li");
+    // liElements = carouselDiv.querySelector(".carousel-li"); // Eliminar esta línea
 
-    carousel(arrowLeft,arrowRight,scrollContainer,liElements);
+    carousel(arrowLeft,arrowRight,scrollContainer,liElements[0]); // Pasar el primer elemento para el cálculo del ancho
 
 
 
