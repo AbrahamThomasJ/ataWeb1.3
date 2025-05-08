@@ -171,8 +171,13 @@
     align-items: center;
 }
 
+.carousel-li img, .carousel-img {
+    border-radius: 10px !important;
+    overflow: hidden;
+}
+
+/* Estilo base para todos los production-grid */
 .productions-grid{
-    background-color: #ffffff;
     border-radius: 15px;
     width: 95%;
     margin: 0 auto;
@@ -180,6 +185,71 @@
     border: 1px solid #c0c0c0;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     position: relative;
+    background-color: #ffffff; /* Color de respaldo */
+}
+
+/* Estilos específicos para cada producción basados en sus paletas de colores */
+
+/* 24 HORAS - tonos rojos y naranjas */
+.production-24horas {
+    background: linear-gradient(135deg, #00ff6566 0%, #ff001240 100%);
+    border-color: #ffd7c9;
+}
+
+/* La traicion de Grimilda - tonos oscuros y azulados */
+.production-traicion,
+.productions-grid:has(img[src*="traicion"]) {
+    background: linear-gradient(179deg, rgb(0,0,0) 0%, #e3cf0a57 100%);
+    border-color: #d2d5e0;
+}
+
+/* Ultimo silencio - tonos púrpuras y blancos */
+.production-silencio {
+    background: linear-gradient(249deg, #89540259 0%, #fcf7ff 100%);
+    border-color: #e5d5f0;
+}
+
+/* La esquina del miedo - tonos oscuros y rojos */
+.production-esquina {
+    background: linear-gradient(180deg, #ad0713 0%, #fff2f2 100%);
+    border-color: #f0d5d5;
+}
+
+/* Colores - tonos coloridos y vibrantes con arcoíris */
+.production-colores {
+    background: linear-gradient(
+        135deg, 
+        rgb(242 255 229) 0%,
+        rgb(222 253 255) 16.6%,
+        rgb(233 229 252) 33.3%,
+        rgb(255 240 224) 50%,
+        rgb(223 242 255) 66.6%,
+        rgb(223 242 255) 83.3%,
+        rgb(253 230 238) 100%);
+    
+    border-color: #d5f0e5;
+    border-image: linear-gradient(
+        to right, 
+        #ff0000, 
+        #ff9a00, 
+        #d0de21, 
+        #4fdc4a, 
+        #3fdad8, 
+        #2fc9e2, 
+        #1c7fee
+    ) 1;
+}
+
+/* Libertad - tonos azules y claros */
+.production-libertad {
+    background: linear-gradient(135deg, #e3cf0a17 0%, #ff00124d 100%);
+    border-color: #d5e5f0;
+}
+
+/* Romeo y Julieta - tonos románticos y suaves */
+.production-romeo {
+    background: linear-gradient(135deg, #faf5f7 0%, #fff0f5 100%);
+    border-color: #f0d5dd;
 }
 
 
